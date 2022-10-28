@@ -1,0 +1,96 @@
+@mixin h1
+    font-family: 'Roboto'
+    // src: '../fonts/roboto/Roboto-Bold.ttf' format('truetype')
+    font-weight: 700
+    font-style: normal
+    font-size: 106px
+    line-height: 75%
+    color: #FFFFFF
+
+@mixin h2
+    font-family: 'Roboto'
+    // src: '../fonts/roboto/Roboto-Regular.ttf' format('truetype')
+    font-weight: 400
+    font-style: normal
+    font-size: 48px
+    line-height: 120%
+    color: #333B41
+
+@mixin h3
+    font-family: 'Roboto'
+    // src: '../fonts/roboto/Roboto-Regular.ttf' format('truetype')
+    font-weight: 400
+    font-style: normal
+    font-size: 36px
+    line-height: 130%
+    color: #333B41
+
+@mixin btnFont
+    font-family: 'Roboto'
+    // src: '../fonts/roboto/Roboto-Medium.ttf' format('truetype')
+    font-weight: 500
+    font-style: normal
+    font-size: 16px
+    line-height: 140%
+    color: #FFFFFF
+
+@mixin h4
+    font-family: 'Roboto'
+    // src: '../fonts/roboto/Roboto-Regular.ttf' format('truetype')
+    font-weight: 400
+    font-style: normal
+    font-size: 16px
+    line-height: 130%
+    color: #333B41
+
+@mixin h5
+    font-family: 'Roboto'
+    // src: '../fonts/roboto/Roboto-Regular.ttf' format('truetype')
+    font-weight: 400
+    font-style: normal
+    font-size: 24px
+    line-height: 120%
+    color: #333B41
+
+@mixin h6
+    font-family: 'Roboto'
+    // src: '../fonts/roboto/Roboto-Light.ttf' format('truetype')
+    font-weight: 300
+    font-style: normal
+    font-size: 15px
+    line-height: 120%
+    color: #767474
+
+@mixin orange_color
+    background: linear-gradient(113.96deg, rgba(249, 128, 75, 1) 1.49%, rgba(254, 144, 19, 1) 101.44%)
+
+@mixin button
+    @include orange_color
+    @include btnFont
+    text-transform: uppercase
+    width: 298px
+    height: 54px
+    border-radius: 25px
+    border: none
+
+body
+    padding: 0px
+    margin: 0px auto
+    position: relative
+
+.container
+    max-width: 1160px
+    margin: 0 auto
+
+a
+    text-decoration: none
+    color: #545454
+
+
+@import "./header"
+@import "./main"
+@import "./about"
+@import "./slider"
+@import "./works"
+@import "./comment"
+@import "./footer"
