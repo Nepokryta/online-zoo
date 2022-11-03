@@ -1,0 +1,77 @@
+.comment
+
+    &_wrapper
+        margin: 150px auto 0
+        display: flex
+        flex-direction: column
+
+    &__title 
+        @include h3
+        margin-top: 140px
+        display: flex
+        justify-content: center
+
+    &__cards
+        display: flex
+        justify-content: space-between
+        margin: 47px 0 20px
+
+    &__card
+        background: #F1F3F2
+        border: 2px solid #febdab
+        border-radius: 20px
+
+        .card__wrapper
+            display: flex
+            align-items: center
+            margin: 15px 15px 10px 16px
+
+        .user__info
+            margin-left: 10px
+
+        .user__name
+            @include h4
+            
+        .info
+            display: flex
+            @include h6
+
+    &__text
+        @include h6
+        color: #767474
+        width: 234px
+        height: 307px
+        margin: 0 15px 19px 16px
+        overflow: hidden
+
+        span
+            display: none
+
+    .scrol
+        width: 600px
+        height: 8px
+        background: #F5F7F6
+        border-radius: 5px
+        border: 0.5px solid #febdab
+        margin: 0 auto
+        display: flex
+        align-items: center
+
+    .scrolBtn
+        width: 115px
+        height: 6px
+        background: #FE9013
+        border-radius: 5px
+
+    &__button
+        @include button
+        border-radius: 5px
+        margin: 31px 0 180px
+
+    .bg
+        position: absolute
+        width: 100%
+        height: 102px
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end

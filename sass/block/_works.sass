@@ -1,0 +1,86 @@
+.works
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%)
+    opacity: 0.9
+    padding: 69px 0 100px
+
+    &__wrapper
+        background: rgba(253, 253, 255, 0.52)
+        border-radius: 20px
+        display: flex
+        flex-direction: column
+
+        .title
+            @include h2
+            color: orange
+            margin: 41px auto 30px
+            
+        .subtitle
+            @include h5
+            margin-left: 99px
+
+        .body1
+            @include h4
+            font-weight: 500
+            margin-left: 99px
+            margin-top: 40px
+
+        .body2
+            @include h4
+            margin-left: 99px
+            width: 863px
+            margin-top: 10px
+
+            span
+                text-decoration: underline
+                text-decoration-color: orange
+
+        .title2
+            @include h3
+            margin: 60px auto 40px
+
+    &__items
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 764px
+        margin: 0 auto
+        position: relative
+
+        .item
+            display: flex
+            flex-direction: column
+
+            &__img
+                width: 168px
+                height: 168px
+                background: #FFFFFF
+                border-radius: 5px
+                border: 1px solid orange
+                display: flex
+                align-items: center
+                justify-content: center
+
+
+            &__body
+                @include h4
+                line-height: 140%
+                width: 168px
+                height: 44px
+                margin-top: 30px
+
+    .arrow
+        background: url(../icons/Vector.svg) no-repeat center
+        width: 72px
+        height: 40px
+        bottom: 35.7%
+        position: absolute
+
+    .arrow1
+        left: calc(50% - 940px/2 + 290px)
+       
+    .arrow2
+        left: calc(50% - 940px/2 + 590px)
+        
+    &__button
+        @include button
+        margin: 60px auto
