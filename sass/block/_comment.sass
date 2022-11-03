@@ -6,7 +6,10 @@
         flex-direction: column
 
     &__title 
-        @include h3
+        font-weight: 400
+        font-size: 36px
+        line-height: 130%
+        color: #333B41
         margin-top: 140px
         display: flex
         justify-content: center
@@ -30,22 +33,30 @@
             margin-left: 10px
 
         .user__name
-            @include h4
-            
+            font-weight: 400
+            font-size: 16px
+            line-height: 130%
+            color: #333B41
+
         .info
             display: flex
-            @include h6
+            font-weight: 300
+            font-size: 15px
+            line-height: 120%
+            color: #767474
 
     &__text
-        @include h6
+        font-weight: 300
+        font-size: 15px
+        line-height: 120%
         color: #767474
         width: 234px
         height: 307px
         margin: 0 15px 19px 16px
         overflow: hidden
 
-        span
-            display: none
+    span
+        display: none
 
     .scrol
         width: 600px

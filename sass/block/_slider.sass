@@ -31,12 +31,16 @@
                 padding: 4px 14px 14px
 
             .card__title
-                @include btnFont
+                font-weight: 500
+                font-size: 16px
+                line-height: 140%
                 text-transform: uppercase
                 color: #000000
 
             .card__subtitle
-                @include h6
+                font-weight: 300
+                font-size: 15px
+                line-height: 120%
                 color: #000000
 
     .btn
@@ -49,10 +53,10 @@
         @include orange__color
         
         &__left
-            left: 8%
+            left: calc(50% - 1600px/2 + 140px)
 
         &__right
-            right: 8%
+            right: calc(50% - 1600px/2 + 140px)
 
     &__button
         @include button

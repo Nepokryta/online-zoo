@@ -13,8 +13,6 @@
             height: 52px
             border: 1px solid #FFFFFF
             border-radius: 2px
-            font-family: 'Roboto'
-            font-style: normal
             font-weight: 400
             font-size: 19px
             line-height: 120%
@@ -30,7 +28,10 @@
             flex-direction: column
 
             .title
-                @include h5
+                font-weight: 400
+                font-size: 24px
+                line-height: 120%
+                color: #333B41
                 color: #FFFFFF
                 width: 240px
 
@@ -40,7 +41,8 @@
                 padding: 14px 0 36px
 
                 .subtitle
-                    @include h4
+                    font-weight: 400
+                    font-size: 16px
                     line-height: 140%
                     width: 211px
                     color: #BDBDBD
@@ -49,7 +51,8 @@
                     padding: 10px 7px 10px 10px
 
                 .button__news
-                    @include h4
+                    font-weight: 400
+                    font-size: 16px
                     line-height: 140%
                     color: #4B9200
                     background: #F1F3F2
@@ -83,7 +86,8 @@
             height: 26px
 
         .title
-            @include h4
+            font-weight: 400
+            font-size: 16px
             line-height: 140%
             color: #FFFFFF
             padding-left: 12px
@@ -91,18 +95,18 @@
     .nav
         display: flex
         margin: 0
-        // padding-left: 140px
 
         &__item
-            @include btnFont
             font-weight: 400
+            font-size: 16px
+            line-height: 140%
             color: #FFFFFF
             list-style: none
             padding-inline-end: 44px
 
     .title
-        @include h4
         font-weight: 100
+        font-size: 16px
         line-height: 170%
         color: #FFFFFF
         width: 235px
