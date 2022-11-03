@@ -38,61 +38,61 @@ window.addEventListener('DOMContentLoaded', function() {
 
     new SliderCard (
         "1",
-        "/img/pandas.png",
+        "img/pandas.png",
         "pandas",
         "giant Pandas",
         "Native to Southwest China",
-        "/icons/banana-bamboo_icon.svg",
+        "icons/banana-bamboo_icon.svg",
         "banana-bamboo_icon",
         ".container .cards"
     ).render();
     new SliderCard (
         "2",
-        "/img/eagles.png",
+        "img/eagles.png",
         "eagles",
         "Eagles",
         "Native to South America",
-        "/icons/meet-fish_icon.svg",
+        "icons/meet-fish_icon.svg",
         "meet-fish_icon",
         ".container .cards"
     ).render();
     new SliderCard (
         "3",
-        "/img/gorillas.png",
+        "img/gorillas.png",
         "gorillas",
         "Gorillas",
         "Native to Congo",
-        "/icons/banana-bamboo_icon.svg",
+        "icons/banana-bamboo_icon.svg",
         "banana-bamboo_icon",
         ".container .cards"
     ).render();
     new SliderCard (
         "4",
-        "/img/sloth.png",
+        "img/sloth.png",
         "sloth",
         "Two-toed Sloth",
         "Native to Southwest China",
-        "/icons/banana-bamboo_icon.svg",
+        "icons/banana-bamboo_icon.svg",
         "banana-bamboo_icon",
         ".container .cards"
     ).render();
     new SliderCard (
         "5",
-        "/img/cheetahs.png",
+        "img/cheetahs.png",
         "cheetahs",
         "cheetahs",
         "Native to Africa",
-        "/icons/meet-fish_icon.svg",
+        "icons/meet-fish_icon.svg",
         "meet-fish_icon",
         ".container .cards"
     ).render();
     new SliderCard (
         "6",
-        "/img/penguins.png",
+        "img/penguins.png",
         "penguins",
         "Penguins",
         "Native to Antarctica",
-        "/icons/meet-fish_icon.svg",
+        "icons/meet-fish_icon.svg",
         "meet-fish_icon",
         ".container .cards"
     ).render();
@@ -134,7 +134,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
     new CommentCard (
         "1",
-        "/icons/user_icon.svg",
+        "icons/user_icon.svg",
         "user_icon",
         "Michael John",
         "Local Austria",
@@ -144,7 +144,7 @@ window.addEventListener('DOMContentLoaded', function() {
     ).render();
     new CommentCard (
         "2",
-        "/img/user2.png",
+        "img/user2.png",
         "user2",
         "Oskar Samborsky",
         "Local Austria",
@@ -154,7 +154,7 @@ window.addEventListener('DOMContentLoaded', function() {
     ).render();
     new CommentCard (
         "3",
-        "/img/user3.png",
+        "img/user3.png",
         "user3",
         "Fredericka Michelin",
         "Local Austria",
@@ -164,7 +164,7 @@ window.addEventListener('DOMContentLoaded', function() {
     ).render();
     new CommentCard (
         "4",
-        "/img/user4.png",
+        "img/user4.png",
         "user4",
         "Mila Riksha",
         "Local Austria",
