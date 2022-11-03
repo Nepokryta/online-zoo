@@ -5,39 +5,41 @@
         display: flex
         flex-direction: column
 
-    &_title 
+    &__title 
         @include h3
-        margin: 0 auto
+        margin-top: 140px
+        display: flex
+        justify-content: center
 
-    &_cards
+    &__cards
         display: flex
         justify-content: space-between
         margin: 47px 0 20px
 
-    &_card
-        width: 268px
+    &__card
         background: #F1F3F2
         border: 2px solid #febdab
         border-radius: 20px
 
-        .card_wrapper
+        .card__wrapper
             display: flex
             align-items: center
             margin: 15px 15px 10px 16px
 
-        .user_info
+        .user__info
             margin-left: 10px
 
-        .user_name
+        .user__name
             @include h4
             
         .info
             display: flex
             @include h6
 
-    &_text
+    &__text
         @include h6
         color: #767474
+        width: 234px
         height: 307px
         margin: 0 15px 19px 16px
         overflow: hidden
@@ -46,7 +48,7 @@
             display: none
 
     .scrol
-        width: 599px
+        width: 600px
         height: 8px
         background: #F5F7F6
         border-radius: 5px
@@ -56,12 +58,12 @@
         align-items: center
 
     .scrolBtn
-        width: 115.19px
+        width: 115px
         height: 6px
         background: #FE9013
         border-radius: 5px
 
-    &_button
+    &__button
         @include button
         border-radius: 5px
         margin: 31px 0 180px

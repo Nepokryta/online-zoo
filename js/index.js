@@ -3,7 +3,8 @@ window.addEventListener('DOMContentLoaded', function() {
     // классы для карточек 
 
     class SliderCard {
-        constructor(src, alt, title, subtitle, srcIcons, altIcons, parentSelector) {
+        constructor(num, src, alt, title, subtitle, srcIcons, altIcons, parentSelector) {
+            this.num = num;
             this.src = src;
             this.alt = alt;
             this.title = title;
@@ -16,16 +17,16 @@ window.addEventListener('DOMContentLoaded', function() {
         render() {
             const element = document.createElement('div');
             element.innerHTML = `
-                <div class="card">
-                    <div class="card-photo">
+                <div class="card card${this.num}">
+                    <div class="card__photo">
                         <img src=${this.src} alt=${this.alt}>
                     </div>
-                    <div class="card_wrapper">
-                        <div class="card_info">
-                            <div class="card_title">${this.title}</div>
-                            <div class="card_subtitle">${this.subtitle}</div>
+                    <div class="card__wrapper">
+                        <div class="card__info">
+                            <div class="card__title">${this.title}</div>
+                            <div class="card__subtitle">${this.subtitle}</div>
                         </div>
-                        <div class="card_icons">
+                        <div class="card__icons">
                             <img src=${this.srcIcons} alt=${this.altIcons}>
                         </div>
                     </div>
@@ -36,6 +37,7 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 
     new SliderCard (
+        "1",
         "/img/pandas.png",
         "pandas",
         "giant Pandas",
@@ -45,6 +47,7 @@ window.addEventListener('DOMContentLoaded', function() {
         ".container .cards"
     ).render();
     new SliderCard (
+        "2",
         "/img/eagles.png",
         "eagles",
         "Eagles",
@@ -54,6 +57,7 @@ window.addEventListener('DOMContentLoaded', function() {
         ".container .cards"
     ).render();
     new SliderCard (
+        "3",
         "/img/gorillas.png",
         "gorillas",
         "Gorillas",
@@ -63,6 +67,7 @@ window.addEventListener('DOMContentLoaded', function() {
         ".container .cards"
     ).render();
     new SliderCard (
+        "4",
         "/img/sloth.png",
         "sloth",
         "Two-toed Sloth",
@@ -72,6 +77,7 @@ window.addEventListener('DOMContentLoaded', function() {
         ".container .cards"
     ).render();
     new SliderCard (
+        "5",
         "/img/cheetahs.png",
         "cheetahs",
         "cheetahs",
@@ -81,6 +87,7 @@ window.addEventListener('DOMContentLoaded', function() {
         ".container .cards"
     ).render();
     new SliderCard (
+        "6",
         "/img/penguins.png",
         "penguins",
         "Penguins",
@@ -93,7 +100,8 @@ window.addEventListener('DOMContentLoaded', function() {
     // кдассы для отзывов
 
     class CommentCard {
-        constructor(src, alt, title, subtitle1, subtitle2, body, parentSelector) {
+        constructor(num, src, alt, title, subtitle1, subtitle2, body, parentSelector) {
+            this.num = num;
             this.src = src;
             this.alt = alt;
             this.title = title;
@@ -106,11 +114,11 @@ window.addEventListener('DOMContentLoaded', function() {
         render() {
             const element = document.createElement('div');
             element.innerHTML = `
-                <div class="comment_card">
-                    <div class="card_wrapper">
+                <div class="comment__card comment__card${this.num}">
+                    <div class="card__wrapper">
                         <div class="img"><img src=${this.src} alt=${this.alt}></div>
-                        <div class="user_info">
-                            <div class="user_name">${this.title}</div>
+                        <div class="user__info">
+                            <div class="user__name">${this.title}</div>
                             <div class="info">
                                 <div class="loc">${this.subtitle1}</div>
                                 <div class="decor">&ensp;•&ensp;</div>
@@ -118,46 +126,50 @@ window.addEventListener('DOMContentLoaded', function() {
                             </div>
                         </div>
                     </div>
-                    <div class="comment_text">${this.body}</div>
+                    <div class="comment__text">${this.body}</div>
                 </div>
             `;
             this.parent.append(element);
         }
     }
     new CommentCard (
+        "1",
         "/icons/user_icon.svg",
         "user_icon",
         "Michael John",
         "Local Austria",
         "Today",
         "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. <br> The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.",
-        ".comment_wrapper .comment_cards"
+        ".comment__wrapper .comment__cards"
     ).render();
     new CommentCard (
+        "2",
         "/img/user2.png",
         "user2",
         "Oskar Samborsky",
         "Local Austria",
         "Yesterday",
         "Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. <br> The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals. <br> The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.",
-        ".comment_wrapper .comment_cards"
+        ".comment__wrapper .comment__cards"
     ).render();
     new CommentCard (
+        "3",
         "/img/user3.png",
         "user3",
         "Fredericka Michelin",
         "Local Austria",
         "Yesterday",
         "The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.<br> The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. <br> The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.",
-        ".comment_wrapper .comment_cards"
+        ".comment__wrapper .comment__cards"
     ).render();
     new CommentCard (
+        "4",
         "/img/user4.png",
         "user4",
         "Mila Riksha",
         "Local Austria",
         "Yesterday",
         "My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. <br> The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.The best online zoo I’ve met. My son delighted very much ljves to watch gouillas. Online zoo is one jf the ways to instill a love for animals.",
-        ".comment_wrapper .comment_cards"
+        ".comment__wrapper .comment__cards"
     ).render();
 });

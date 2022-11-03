@@ -3,7 +3,7 @@
     opacity: 0.9
     padding: 69px 0 100px
 
-    &_wrapper
+    &__wrapper
         background: rgba(253, 253, 255, 0.52)
         border-radius: 20px
         display: flex
@@ -38,36 +38,49 @@
             @include h3
             margin: 60px auto 40px
 
-    &_items
+    &__items
         display: flex
         justify-content: space-between
         align-items: center
         width: 764px
         margin: 0 auto
+        position: relative
 
         .item
-            width: 168px
-            height: 168px
-            background: #FFFFFF
-            border-radius: 5px
-            border: 1px solid orange
             display: flex
-            align-items: center
-            justify-content: center
+            flex-direction: column
 
-    &_items_title
-        display: flex
-        justify-content: space-between
-        align-items: flex-start
-        width: 764px
-        margin: 0 auto
+            &__img
+                width: 168px
+                height: 168px
+                background: #FFFFFF
+                border-radius: 5px
+                border: 1px solid orange
+                display: flex
+                align-items: center
+                justify-content: center
 
-    .items_body
-        @include h4
-        line-height: 140%
-        width: 168px
-        margin-top: 30px
 
-    &_button
+            &__body
+                @include h4
+                line-height: 140%
+                width: 168px
+                height: 44px
+                margin-top: 30px
+
+    .arrow
+        background: url(../icons/Vector.svg) no-repeat center
+        width: 72px
+        height: 40px
+        bottom: 35.7%
+        position: absolute
+
+    .arrow1
+        left: calc(50% - 940px/2 + 290px)
+       
+    .arrow2
+        left: calc(50% - 940px/2 + 590px)
+        
+    &__button
         @include button
         margin: 60px auto

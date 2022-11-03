@@ -61,11 +61,10 @@
     line-height: 120%
     color: #767474
 
-@mixin orange_color
-    background: linear-gradient(113.96deg, rgba(249, 128, 75, 1) 1.49%, rgba(254, 144, 19, 1) 101.44%)
-
+@mixin orange__color
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)
 @mixin button
-    @include orange_color
+    @include orange__color
     @include btnFont
     text-transform: uppercase
     width: 298px
@@ -94,3 +93,6 @@ a
 @import "./works"
 @import "./comment"
 @import "./footer"
+@import "./size-940"
+@import "./size-600"
+@import "./size-300"

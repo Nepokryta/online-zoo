@@ -1,9 +1,11 @@
+
 .main
     background: url(../img/giant-panda.png) no-repeat center
     background-size: cover
-    height: 700px
-    .ellipse
-        @include orange_color
+    height: 780px
+
+    &__ellipse
+        @include orange__color
         position: absolute
         width: 465px
         height: 465px
@@ -12,7 +14,7 @@
         border-radius: 50%
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 
-    .main_title
+    &__title
         @include h1
         text-transform: uppercase
         position: absolute
@@ -23,7 +25,7 @@
         span
             color: #FFEE2E
 
-    .main_button
+    &__button
         @include button
         left: calc(50% - 298px/2 + 332px)
         top: 626px

@@ -1,0 +1,72 @@
+.slider
+    display: flex
+    flex-direction: column
+    position: relative
+
+    &__content
+        display: flex
+        flex-direction: column
+        position: relative
+        margin-top: 100px
+
+
+    &__arrow
+        display: flex
+        
+
+    .cards
+        display: flex
+        flex-wrap: wrap
+        align-content: space-between
+        justify-content: space-between
+        height: 880px
+        
+        .card
+            width: 366px
+            border: 1px solid orange
+
+            &__wrapper
+                display: flex
+                justify-content: space-between
+                padding: 4px 14px 14px
+
+            .card__title
+                @include btnFont
+                text-transform: uppercase
+                color: #000000
+
+            .card__subtitle
+                @include h6
+                color: #000000
+
+    .btn
+        width: 62px
+        height: 62px
+        border-radius: 50%
+        border: none
+        position: absolute
+        top: 36.5%
+        @include orange__color
+        
+        &__left
+            left: 8%
+
+        &__right
+            right: 8%
+
+    &__button
+        @include button
+        margin: 80px auto 100px
+
+
+    .bg1
+        height: 460px
+        position: absolute
+        bottom: 0
+
+    .bg2
+        height: 275px
+        position: absolute
+        bottom: 0
+        right: 0
+
