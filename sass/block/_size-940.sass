@@ -44,19 +44,19 @@
     .slider
 
         &__content
-            margin-top: 80px
+            margin: 80px auto 0
+            width: 938px
 
         .cards
-            height: 806px
+            grid-template: repeat(2, 1fr) / repeat(3, 294px)
+            gap: 90px 28px
 
-            .card
-                width: 294px
-
-                &__photo img
-                    width: 294px
-                    height: 294px
+            .card__photo
+                width: 290px
 
         .btn
+            top: 41%
+
             &__left
                 left: calc(50% - 940px/2 + 325px)
 

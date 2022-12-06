@@ -37,19 +37,16 @@
             padding: 20px 0 0
 
     .slider
-
         &__content
-            margin: 40px 0 60px
+            margin: 40px auto 0
+            width: 285px
 
         .cards
-            height: 1480px
-            display: block
+            grid-template: repeat(4, 1fr) / repeat(1, 285px)
+            gap: 20px 0
 
-            .card
-                margin-bottom: 20px
-
-            .card4
-                margin-left: 0
+            .card__photo
+                width: 281px
 
         .btn
             display: none
@@ -58,13 +55,13 @@
             height: 1300px
 
         .bg1, .bg1 img
-            height: 72px
+            height: 75px
 
         .bg2, .bg2 img
             height: 65px
 
         &__button
-            margin: 0 auto 0
+            margin: 20px auto 60px
 
     .works
         padding: 20px 0 20px
@@ -107,7 +104,7 @@
 
     .comment
         &__cards
-            width: 100%
+            // width: 100%
             margin: 20px 0 20px
 
         &__card
