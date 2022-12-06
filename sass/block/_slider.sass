@@ -1,0 +1,78 @@
+.slider
+    position: relative
+    display: grid
+
+    &__content
+        margin: 100px auto 0
+        width: 1158px
+        // background-color: red
+
+    &__arrow
+        display: flex
+        
+    .carousel
+        overflow: hidden
+
+    .cards
+        display: grid
+        grid-auto-flow: column
+        grid-template: repeat(2, 1fr) / repeat(3, 366px)
+        gap: 20px 30px
+        transition: margin-left 250ms
+
+        .card
+            border: 1px solid orange
+            border-radius: 5px
+            &__photo
+                width: 364px
+                border-radius: 5px 5px 0 0
+
+            &__wrapper
+                display: flex
+                justify-content: space-between
+                padding: 8px 14px 14px
+
+            .card__title
+                font-weight: 500
+                font-size: 16px
+                line-height: 140%
+                text-transform: uppercase
+                color: #000000
+
+            .card__subtitle
+                font-weight: 300
+                font-size: 15px
+                line-height: 120%
+                color: #000000
+
+    .btn
+        width: 62px
+        height: 62px
+        border-radius: 50%
+        border: none
+        position: absolute
+        top: 42%
+        @include orange__color
+        
+        &__left
+            left: calc(50% - 1600px/2 + 140px)
+
+        &__right
+            right: calc(50% - 1600px/2 + 140px)
+
+    &__button
+        @include button
+        margin: 80px auto 100px
+
+
+    .bg1
+        height: 460px
+        position: absolute
+        bottom: 0
+
+    .bg2
+        height: 275px
+        position: absolute
+        bottom: 0
+        right: 0
+
