@@ -251,24 +251,23 @@ window.addEventListener('DOMContentLoaded', function() {
 
     // Carousel
 
-
     let listElement = document.querySelectorAll('.card');
     let list = document.querySelector('.cards');
     const btnLeft = document.querySelector('.btn__left');
     const btnRight = document.querySelector('.btn__right');
 
     let content = document.querySelector('.container').offsetWidth;
-    console.log(content);
 
-    window.onresize = function() {
-        let newContent =  document.querySelector('.container').offsetWidth;
-        if (newContent != content) {
-            console.log('ffffff');
-            content = newContent;
-            location.reload();
-        }
-        console.log(content);
-    };
+    function updatePageWidth() {
+        window.onresize = function() {
+            let newContent =  document.querySelector('.container').offsetWidth;
+            if (newContent != content) {
+                content = newContent;
+                location.reload();
+            }
+        };
+    }
+    updatePageWidth();
 
     let width;   // ширина картинки
     let count;   // видимое количество изображений
@@ -307,7 +306,6 @@ window.addEventListener('DOMContentLoaded', function() {
         position = Math.max(position, lastPage());
         list.style.marginLeft = position + 'px';
     }
-
 
     btnLeft.addEventListener('click', () => {
         if (position === 0) {
